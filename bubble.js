@@ -16,10 +16,9 @@ const sortBubble = (array)=>{
     return array
 }
 
-export default {code:sortBubble
-}
+export default {code:sortBubble}
 
-// export const execution
+export const execution
 // Test Case
 // const test = 
 // [
@@ -36,3 +35,11 @@ export default {code:sortBubble
 //     const color = (result ) ? "\x1b[32m":"\x1b[31m" 
 //     console.info(color,`Input: ${test.input} Result : ${result}`);
 // })
+
+var number = 1
+var string = "chanois"
+var boolean = true
+var object = new BaseBallPlayer ("Gonzales")
+var array = []
+
+var myFriends = ["elchanois","eldude","elpepe"]

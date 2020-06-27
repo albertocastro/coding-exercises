@@ -1,30 +1,18 @@
-import BFS from "./BFS"
-import bubble from "./bubble"
-// import chanois from "./chanois"
-// import averageLevel from "./averageLevel"
-// import colorfulNumber from "./colorfulNumber"
-// import DFS from "./DFS"
-// import heightBT from "./heightBT"
-// import insertBST from "./insertBST"
-// import InsertionSort from "./InsertionSort"
-// import isPalindromeWithEdit from "./isPalindromeWithEdit"
-// import minHeapOperations from "./minHeapOperations"
-// import quickSort from "./quickSort"
-// import routeBetweenNodes from "./routeBetweenNodes"
-// import snakeLadderQuickestWayUp from "./snakeLadderQuickestWayUp"
-export default {
-    // chanois,
-    // averageLevel,
-    BFS,
-    bubble,
-    // colorfulNumber,
-    // DFS,
-    // heightBT,
-    // insertBST,
-    // InsertionSort,
-    // isPalindromeWithEdit,
-    // minHeapOperations,
-    // quickSort,
-    // routeBetweenNodes,
-    // snakeLadderQuickestWayUp,
-}
+import exercise,{description,tests} from "./partition.js"
+
+
+console.log(description)
+
+tests.map(test =>{
+    const result = exercise(test.input)
+    console.log("==============================")
+    console.log("Input:",test.input)
+    console.log(`Output:     ${result}`)
+    console.log(`Expected:   ${test.result}`)
+    if(JSON.stringify(result) == JSON.stringify(test.result)){
+        console.log(`Result: `,"\x1b[32m","Passed")
+    }else{
+        console.log(`Result: `,"\x1b[31m","Failed")
+    }
+    console.log("\x1b[0m")
+})
