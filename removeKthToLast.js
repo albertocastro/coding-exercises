@@ -38,13 +38,7 @@ export default ([l,k])=>{
         if(current.next.next!=null) firstPointer =firstPointer.next
         
     })
-    
-    // remove(firstPointer)
-    // const result = []
-    // traverse(list.root,(current)=>{
-    //    result.push(current.value)
-        
-    // })
+
    return result
 }   
 

@@ -1,4 +1,4 @@
-import exercise,{description,tests} from "./partition.js"
+import exercise,{description,tests} from "./minimalTree.js"
 
 
 console.log(description)
